@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BrutalMusicManager.Api.Interfaces\BrutalMusicManager.Api.Interfaces.csproj" />
+  </ItemGroup>
+
 </Project>

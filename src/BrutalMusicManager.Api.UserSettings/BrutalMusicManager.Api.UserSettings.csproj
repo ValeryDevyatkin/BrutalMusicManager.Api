@@ -7,10 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="CoreLogic\" />
-    <Folder Include="Database\" />
-    <Folder Include="MusicFileSystem\" />
-    <Folder Include="UserSettings\" />
+    <ProjectReference Include="..\BrutalMusicManager.Api.Interfaces\BrutalMusicManager.Api.Interfaces.csproj" />
   </ItemGroup>
 
 </Project>

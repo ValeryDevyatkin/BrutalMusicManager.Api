@@ -5,13 +5,21 @@ VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrutalMusicManager.Api.Host", "..\src\BrutalMusicManager.Api.Host\BrutalMusicManager.Api.Host.csproj", "{C7AC0711-AB55-4DDB-A51D-7BD23D14E376}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrutalMusicManager.Api.CoreLogic", "..\src\BrutalMusicManager.Api.CoreLogic\BrutalMusicManager.Api.CoreLogic.csproj", "{80B6FEF5-1628-4B15-9420-78E3911FAECB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrutalMusicManager.Api.CoreLogic", "..\src\BrutalMusicManager.Api.CoreLogic\BrutalMusicManager.Api.CoreLogic.csproj", "{80B6FEF5-1628-4B15-9420-78E3911FAECB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrutalMusicManager.Api.Interfaces", "..\src\BrutalMusicManager.Api.Interfaces\BrutalMusicManager.Api.Interfaces.csproj", "{D5FEAAB5-78F8-48F5-B53B-068D16E7DC66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrutalMusicManager.Api.Interfaces", "..\src\BrutalMusicManager.Api.Interfaces\BrutalMusicManager.Api.Interfaces.csproj", "{D5FEAAB5-78F8-48F5-B53B-068D16E7DC66}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Host", "Host", "{0272B50A-0D1B-4391-A06C-29B5D5C1AA3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrutalMusicManager.Api.CoreLogic.Registrator", "..\src\BrutalMusicManager.Api.CoreLogic.Registrator\BrutalMusicManager.Api.CoreLogic.Registrator.csproj", "{62879E5C-AF65-4383-BB53-33443CB7232D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrutalMusicManager.Api.ModuleRegistrator", "..\src\BrutalMusicManager.Api.ModuleRegistrator\BrutalMusicManager.Api.ModuleRegistrator.csproj", "{58AA0C08-52FF-4DAA-91BB-A6CA643666E5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrutalMusicManager.Api.Database", "..\src\BrutalMusicManager.Api.Database\BrutalMusicManager.Api.Database.csproj", "{12B27B6C-4962-4568-BDD0-BC285EC6D382}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{4A182B18-E30E-4560-AB51-5C6A4E12419A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrutalMusicManager.Api.UserSettings", "..\src\BrutalMusicManager.Api.UserSettings\BrutalMusicManager.Api.UserSettings.csproj", "{7AA29926-19ED-4BC2-8E4A-88D574490DDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrutalMusicManager.Api.MusicFileSystem", "..\src\BrutalMusicManager.Api.MusicFileSystem\BrutalMusicManager.Api.MusicFileSystem.csproj", "{A9E37FFE-5FAC-4250-8553-48E5047F748C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +39,22 @@ Global
 		{D5FEAAB5-78F8-48F5-B53B-068D16E7DC66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5FEAAB5-78F8-48F5-B53B-068D16E7DC66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5FEAAB5-78F8-48F5-B53B-068D16E7DC66}.Release|Any CPU.Build.0 = Release|Any CPU
-		{62879E5C-AF65-4383-BB53-33443CB7232D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{62879E5C-AF65-4383-BB53-33443CB7232D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{62879E5C-AF65-4383-BB53-33443CB7232D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{62879E5C-AF65-4383-BB53-33443CB7232D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58AA0C08-52FF-4DAA-91BB-A6CA643666E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58AA0C08-52FF-4DAA-91BB-A6CA643666E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58AA0C08-52FF-4DAA-91BB-A6CA643666E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58AA0C08-52FF-4DAA-91BB-A6CA643666E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12B27B6C-4962-4568-BDD0-BC285EC6D382}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12B27B6C-4962-4568-BDD0-BC285EC6D382}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12B27B6C-4962-4568-BDD0-BC285EC6D382}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12B27B6C-4962-4568-BDD0-BC285EC6D382}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AA29926-19ED-4BC2-8E4A-88D574490DDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AA29926-19ED-4BC2-8E4A-88D574490DDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AA29926-19ED-4BC2-8E4A-88D574490DDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AA29926-19ED-4BC2-8E4A-88D574490DDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9E37FFE-5FAC-4250-8553-48E5047F748C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9E37FFE-5FAC-4250-8553-48E5047F748C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9E37FFE-5FAC-4250-8553-48E5047F748C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9E37FFE-5FAC-4250-8553-48E5047F748C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
