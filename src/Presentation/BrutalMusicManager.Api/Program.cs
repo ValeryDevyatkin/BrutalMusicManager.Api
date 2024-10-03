@@ -28,6 +28,7 @@ namespace BrutalMusicManager.Api
             builder.Services.AddAutoMapper(typeof(TrackMetadataProfile));
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddScoped<ITrackMetadataRepository, TrackMetadataRepository>();
+            builder.Services.AddScoped<TrackMetadataService>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
