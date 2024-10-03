@@ -11,8 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BrutalMusicManager.Api.Interfaces\BrutalMusicManager.Api.Interfaces.csproj" />
-    <ProjectReference Include="..\BrutalMusicManager.Api.ModuleRegistrator\BrutalMusicManager.Api.ModuleRegistrator.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\BrutalMusicManager.Api.Persistence\BrutalMusicManager.Api.Persistence.csproj" />
   </ItemGroup>
 
 </Project>
