@@ -7,6 +7,9 @@ public class TrackMetadataProfile : Profile
 {
     public TrackMetadataProfile()
     {
-        CreateMap<TrackMetadataModel, TrackMetadataDto>().ReverseMap();
+        CreateMap<TrackMetadataModel, TrackMetadataDto>()
+            .ForMember(dest => dest.Hash, opt => opt.MapFrom(src => src.Id))
+            .ReverseMap()
+            ;
     }
 }
